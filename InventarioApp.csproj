@@ -5,10 +5,13 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+
 
     <AssemblyName>InventarioApp</AssemblyName>
     <rootnamespace>InventarioApp</rootnamespace>
     <Version>1.0.0</Version>
+    <Authors>Vastudillo</Authors>
     <Description>Aplicación de inventario para gestionar productos y stock.</Description>
   </PropertyGroup>
 </Project>
