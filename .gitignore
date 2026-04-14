@@ -1,0 +1,16 @@
+#Compilation
+bin/
+obj/
+
+#ide
+.vs/
+.vscode/
+*.user
+
+#archivos temporales
+*.log
+*.temporales
+
+#archivos del sitema
+.DB_Store
+Thumbs.db
