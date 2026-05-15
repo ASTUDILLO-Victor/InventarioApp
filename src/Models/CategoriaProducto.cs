@@ -5,6 +5,7 @@ namespace Inventario.Models
         Electronica,
         Ropa,
         Alimentos,
-        Otros
+        Otros,
+        Muebles
     }
 }
