@@ -61,6 +61,7 @@ obj/Debug/net10.0/
 Program.cs
 src/
  Factories/ProductoFactory.cs
+ infrastructure/Filemanager.cs
  Models/
   CategoriaProducto.cs
   EstadoProducto.cs

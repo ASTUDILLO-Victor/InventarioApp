@@ -1,6 +1,7 @@
 using InventarioApp.Factories;
 using Inventario.Models;
 using InventarioApp.Repositories;
+using Inventario.Infrastructure;
 
 Console.WriteLine("====================== InventarioApp====================");
 
