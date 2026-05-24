@@ -1,8 +1,8 @@
 namespace Inventario.Infrastructure;
 
-public class Filemanager
+public class FileManager
 {
-    public  void Escritur(string ruta, string content)
+    public  void Escribir(string ruta, string content)
     {
         File.WriteAllText(ruta, content);
     }
@@ -17,7 +17,7 @@ public class Filemanager
         File.AppendAllText(ruta, content);
     }
 
-    public bool Exist(string ruta)
+    public bool Existe(string ruta)
     {
         return File.Exists(ruta);
     }
