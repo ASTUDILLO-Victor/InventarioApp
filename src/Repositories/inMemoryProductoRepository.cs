@@ -126,9 +126,9 @@ public Dictionary<CategoriaProducto, decimal> ObtenerValorTotalPorCategoria()
                       .ToDictionary(g => g.Key, g => g.Sum(p => p.valorTotal));
 }
 
-public IEnumerable<Productos> ObtenerStockBajo()
+public IEnumerable<Productos> ObtenerStockBajo(int minimo)
 {
-    return _productos.Where(p => p.Cantidad < 5);
+    return _productos.Where(p => p.Cantidad < minimo);
 }
 
 

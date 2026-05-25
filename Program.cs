@@ -4,7 +4,7 @@
 // ════════════════════════════════════════════════════════════════════
 
 using Inventario.Models;
-using Inventario.Services;
+using InventarioApp.Services;
 
 // El servicio carga automáticamente desde inventario.json si existe
 var servicio = new InventarioService();
@@ -119,7 +119,7 @@ void ListarProductos()
     Console.WriteLine("\n=== PRODUCTOS ===");
     foreach (var p in productos)
     {
-        Console.WriteLine($"ID: {p.Id} | {p.Nombre} | ${p.Precio:F2} | Cant: {p.Cantidad} | Total: ${p.ValorTotal:F2} | {p.Categoria}");
+        Console.WriteLine($"ID: {p.Id} | {p.Nombre} | ${p.Precio:F2} | Cant: {p.Cantidad} | Total: ${p.valorTotal:F2} | {p.Categoria}");
     }
     Console.WriteLine($"\nTotal: {productos.Count} producto(s)");
 }
@@ -145,10 +145,10 @@ void BuscarPorId()
     Console.WriteLine($"Nombre:      {producto.Nombre}");
     Console.WriteLine($"Precio:      ${producto.Precio:F2}");
     Console.WriteLine($"Cantidad:    {producto.Cantidad}");
-    Console.WriteLine($"Valor Total: ${producto.ValorTotal:F2}");
+    Console.WriteLine($"Valor Total: ${producto.valorTotal:F2}");
     Console.WriteLine($"Categoría:   {producto.Categoria}");
     Console.WriteLine($"Estado:      {producto.Estado}");
-    Console.WriteLine($"Registrado:  {producto.FechaRegistro:yyyy-MM-dd HH:mm}");
+    Console.WriteLine($"Registrado:  {producto.FechaProducto:yyyy-MM-dd HH:mm}");
 }
 
 void EliminarProducto()
